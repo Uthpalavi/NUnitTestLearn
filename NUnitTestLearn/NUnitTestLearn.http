@@ -1,0 +1,6 @@
+@NUnitTestLearn_HostAddress = http://localhost:5222
+
+GET {{NUnitTestLearn_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
