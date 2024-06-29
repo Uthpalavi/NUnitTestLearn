@@ -15,10 +15,10 @@ namespace NUnitTestLearnTest.BasicTest
 
         [Test]
         public void Add_WhenCalled_ReturnSum()
-        {
-            
+        {         
             var result = _maths.Add(1, 2);
-            Assert.AreEqual(3, result);
+
+            Assert.That(result, Is.EqualTo(3));
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace NUnitTestLearnTest.BasicTest
         public void Max_WhenCalled_ReturnMax(int a, int b, int expected)
         {
             var result = _maths.Max(a, b);
-            Assert.AreEqual((int)expected, result);
+            Assert.That(result, Is.EqualTo(expected));
         }
 
         [Test]
